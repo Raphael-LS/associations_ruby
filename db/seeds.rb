@@ -7,13 +7,8 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
-d1 = Doctor.create(name: "Doutor Pimpolho")
-d2 = Doctor.create(name: "Doutor Tabajara")
 
-p1 = Patient.create(name: "Pedro")
-p2 = Patient.create(name: "Juliana")
+s1 = Supplier.create(name: "Rapha")
+a1 = Account.create(number: 144, supplier: s1)
 
-Appointment.create(doctor: d1, patient: p1, date: DateTime.now)
-Appointment.create(doctor: d2, patient: p2, date: DateTime.now)
-Appointment.create(doctor: d1, patient: p2, date: DateTime.now)
-Appointment.create(doctor: d2, patient: p1, date: DateTime.now)
+AccountHistory.create(date: Date.today, account: a1)
