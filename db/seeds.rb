@@ -8,7 +8,5 @@
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 
-s1 = Supplier.create(name: "Rapha")
-a1 = Account.create(number: 144, supplier: s1)
-
-AccountHistory.create(date: Date.today, account: a1)
+s1 = Student.create(name: "Rapha")
+t1 = Teacher.create(name: "Ju")
