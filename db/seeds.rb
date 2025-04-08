@@ -8,5 +8,5 @@
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 
-s1 = Student.create(name: "Rapha")
-t1 = Teacher.create(name: "Ju")
+# s1 = Student.create(name: "Rapha")
+# t1 = Teacher.create(name: "Ju")
